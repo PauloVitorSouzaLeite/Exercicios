@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loja</title>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/014/500/456/non_2x/shop-cartoon-illustration-free-png.png" type="image/x-icon">
     <style>
         body {
             margin: 0px;
@@ -14,8 +15,19 @@
             text-align: center;
             margin-top: -55px;
         }
+        header > h2 {
+            font-size: 3em;
+        }
+        .personalizacao::after {
+            content: " --";
+            font-size: 1.5em;
+        }
+        .personalizacao::before {
+            content: "-- ";
+            font-size: 1.5em;
+        }
         h1 {
-            font-size: 5em;
+            font-size: 6em;
             background-color: #523B2F;
             display: inline-block;
             padding: 10px 20px;
@@ -27,12 +39,12 @@
             display: inline-block;
             margin: 25px;
             background-color: #523B2F;
-            padding: 10px;
+            padding: 10px 40px;
             border-radius: 2px;
-            font-size: 1.3em;
+            font-size: 2em;
         }
         .l1:hover {
-            font-size: 2em;
+            font-size: 2.3em;
             border-style: outset;
         }
         a {
@@ -44,7 +56,7 @@
         }
         .espaco {
             text-align: justify;
-            padding: 5px 130px;
+            padding: 5px 10px;
         }
         .all {
             margin: 0px;
@@ -67,19 +79,27 @@
             background-color: #CC9476;
             margin-top: -15px;
         }
-        footer {
+        footer  {
             background-color: #CC9476;
-            margin-top: -15px;
+            padding: 30px;
+            font-size: 2.2em;
         }
-        hr {
-            margin: 0px;
+        button {
+            padding: 5px;
+            font-size: 1.5em;
+            border-radius: 15px;
+            background-color: rgba(255, 0, 0, 0.61);
+        }
+        button:hover {
+            font-size: 2.5em;
+            background-color: rgba(0, 128, 0, 0.61);
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Loja</h1>
-        <p>Aqui vendemos vários produtos. Aproveite!!!</p>
+        <h2>À venda</h2>
         <nav>
             <ul>
                 <li class="l1"><a href="#c1">Perfume</a></li>
@@ -91,47 +111,52 @@
     </header>
     <main>
         <section id="sub1" class="all">
-            <h2 id="c1">Perfume</h2>
+            <h2 id="c1" class="personalizacao">Perfume</h2>
             <article>
-                <img  src="imagens/perfume1.png" width="120px">
-                <p class="espaco">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt rem vitae nostrum reprehenderit reiciendis earum enim. Vitae, atque odit! Officia ex repudiandae sapiente ea at, iste illum veritatis ut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nam illum sint ducimus nesciunt, asperiores perferendis accusamus nemo consectetur quos repellendus ipsam alias fugiat quibusdam. Ea sequi veritatis quo quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam optio iure in maiores. Magni perferendis odit, autem pariatur in aliquid. Ratione in dolores qui assumenda, unde numquam odit quibusdam?</p>
+                <img  src="imagens/perfume1.png" alt="">
+                <p class="espaco">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt rem vitae nostrum reprehenderit reiciendis earum enim. Vitae, atque odit! Officia ex repudiandae sapiente ea at, iste illum veritatis ut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nam illum sint ducimus nesciunt, asperiores perferendis accusamus nemo consectetur quos repellendus ipsam alias fugiat quibusdam. Ea sequi veritatis quo quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam optio iure in maiores. Magni perferendis odit, autem pariatur in aliquid. Ratione in dolores qui assumenda, unde numquam odit quibusdam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni itaque quibusdam magnam sed cupiditate distinctio aperiam iure provident dolorum accusamus in, vel vitae voluptatem illum ea, ratione placeat doloribus officia.</p>
+            </article>
+            <article>
+                <p class="espaco">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, veniam est. Ducimus ratione quam consequuntur nulla nihil, molestiae officia earum dolor amet repellendus, praesentium hic, excepturi maxime. Repellat, minus maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium mollitia consequuntur ab dolorem itaque, porro, eveniet qui placeat architecto tempore omnis eos rem. Saepe, perspiciatis dolorem! Eos, mollitia adipisci!
+                </p>
+                <button>Comprar</button>
             </article>
         </section>
         <section id="sub2" class="all">
-            <h2 id="c2">Camisa</h2>
+            <h2 id="c2" class="personalizacao">Camisa</h2>
             <article>
-                <img src="imagens/camisa1.webp" width="120px" alt=""></li>
-                <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit ducimus tempore nulla, inventore minus suscipit molestiae asperiores optio numquam quos nostrum voluptate magnam accusantium alias nobis! Consequuntur, perspiciatis fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita perferendis voluptatibus magni voluptate maxime quaerat necessitatibus quod alias. Quidem enim sequi cumque ducimus perferendis mollitia, aliquam laboriosam at eius esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nobis assumenda esse officiis neque consequatur repudiandae hic debitis perspiciatis, praesentium sequi facere numquam exercitationem itaque repellendus quia ut, nemo rem.</p>
+                <img src="imagens/camisa1.webp"alt=""></li>
+                <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit ducimus tempore nulla, inventore minus suscipit molestiae asperiores optio numquam quos nostrum voluptate magnam accusantium alias nobis! Consequuntur, perspiciatis fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita perferendis voluptatibus magni voluptate maxime quaerat necessitatibus quod alias. Quidem enim sequi cumque ducimus perferendis mollitia, aliquam laboriosam at eius esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nobis assumenda esse officiis neque consequatur repudiandae hic debitis perspiciatis, praesentium sequi facere numquam exercitationem itaque repellendus quia ut, nemo rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae repudiandae nobis illo hic accusantium corrupti fugit aliquam! Repudiandae magnam quisquam animi sint doloribus ab, quidem odit? Accusantium, odio consequatur?</p>
+            </article>
+            <article> 
+                <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit enim modi expedita aliquam cupiditate cum perspiciatis aspernatur necessitatibus, at maxime magnam nulla inventore porro omnis quia accusantium a repellat soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores culpa tempora? Autem quis saepe perferendis sint laboriosam? Facilis, odit quos. Deserunt corporis, quis minus similique velit delectus rem vitae.</p>
+                <button>Comprar</button>
             </article>
         </section>
         <section id="sub3" class="all">
-            <h2 id="c3">Calça</h2>
+            <h2 id="c3" class="personalizacao">Calça</h2>
             <article>
-                <img src="imagens/calca1.webp" width="100px" alt="">
-                <p class="espaco">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, a unde minima nihil quis debitis sed nemo alias exercitationem beatae quaerat deserunt. Minus error molestias nesciunt cum! Soluta, cumque quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex nihil eaque consequatur! Cupiditate totam deserunt consequuntur. Eaque expedita perspiciatis corporis ipsam illo! Corrupti consectetur dolores eum quae sint maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odit amet hic aut corporis quia error veniam velit veritatis quidem! Consequuntur ex quisquam quidem hic commodi
-                    eos cum! Ipsa, ut!
+                <img src="imagens/calca1.webp" alt="">
+                <p class="espaco">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, a unde minima nihil quis debitis sed nemo alias exercitationem beatae quaerat deserunt. Minus error molestias nesciunt cum! Soluta, cumque quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex nihil eaque consequatur! Cupiditate totam deserunt consequuntur. Eaque expedita perspiciatis corporis ipsam illo! Corrupti consectetur dolores eum quae sint maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odit amet hic aut corporis quia error veniam velit veritatis quidem! Consequuntur ex quisquam quidem hic commodi eos cum! Ipsa, ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam architecto harum illo magnam quae incidunt totam obcaecati consequatur laboriosam quaerat! Ullam sapiente sed inventore assumenda exercitationem et expedita quibusdam maxime!
                 </p>
             </article>
+            <article>
+                <p class="espaco">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio iste sed perspiciatis veritatis soluta vero, quod harum pariatur eveniet quam voluptates ducimus itaque minima natus iusto provident enim sapiente iure! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, eaque recusandae. Earum voluptate molestiae numquam quo? Asperiores, laudantium! Minus rem sed enim id eos ipsam error amet esse officia distinctio?</p>
+            </article>
+            <button>Comprar</button>
         </section>
         <section id="sub4" class="all">
-            <h2 id="c4">Short</h2>
+            <h2 id="c4" class="personalizacao">Short</h2>
             <article>
-                    <img src="imagens/short1.png" width="120px" alt="">
-                    <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos praesentium ratione, doloribus eius aut eum id dolorum dolor explicabo neque, cum deserunt consequuntur? Ullam, nostrum dignissimos laudantium nisi at suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure quibusdam, veritatis quaerat sapiente assumenda nam non ex voluptatum vitae laborum fugit, quo, ipsa repudiandae! Tempore earum vero nobis sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quibusdam cum, libero beatae, esse hic assumenda nisi, incidunt officia neque optio eos? Nemo illum sit voluptatum? Voluptatibus aspernatur similique facilis.</p>
+                    <img src="imagens/short1.png" alt="">
+                    <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos praesentium ratione, doloribus eius aut eum id dolorum dolor explicabo neque, cum deserunt consequuntur? Ullam, nostrum dignissimos laudantium nisi at suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure quibusdam, veritatis quaerat sapiente assumenda nam non ex voluptatum vitae laborum fugit, quo, ipsa repudiandae! Tempore earum vero nobis sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quibusdam cum, libero beatae, esse hic assumenda nisi, incidunt officia neque optio eos? Nemo illum sit voluptatum? Voluptatibus aspernatur similique facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nisi recusandae architecto neque quidem laboriosam velit a ipsum fugiat. Voluptas quis molestiae explicabo temporibus ipsam minima corrupti, voluptates omnis commodi!</p>
+                    <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptate ea, fuga assumenda accusantium nobis, ipsum dolorum ipsam exercitationem voluptas fugiat aspernatur quod. Eos unde architecto, praesentium modi ipsa facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptates laboriosam suscipit reiciendis delectus non voluptatibus harum voluptatum commodi nemo. Soluta saepe odio debitis quidem! Natus ipsum reiciendis fuga suscipit.</p>
+                    <button>Comprar</button>
             </article>
         </section>
     </main>
-    <footer class="all">
-        <hr>
-        <section>
-            <p>&copy; Direitos autorais protegidos</p>
-            <p>Contate-nos</p> 
-        </section>
-        <section>
-            <nav>
-
-            </nav>
-        </section>
+    <footer>
+        <p>Site Produzido por Paulo Vitor</p>
     </footer>
 </body>
 </html>
