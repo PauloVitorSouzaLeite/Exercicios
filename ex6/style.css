@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chelsea+Market&family=Outfit:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+body {
+    background-color: #1C7DAD;
+
+    text-align: center;
+    margin: 0px;
+}
+#principal {
+    background-color: #14587A;
+
+    text-align: center;
+
+    border: 5px solid #24A2E0;
+
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#principal > h2 {
+    background-color: #24A2E0;
+    display: inline-block;
+
+    border: 3px solid;
+
+    padding: 10px 5px;
+}
+#principal > h2:hover {
+    background-color: #14587A;
+}
+#principal > h1 {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3.8em;
+    
+    margin: 10px auto;
+}
+main {
+    background-color: #14587A;
+
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: #24A2E0;
+}
+#page {
+    text-align: center;
+
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+
+}
+input {
+    width: 200px;
+    height: 23px;
+
+    margin: auto;
+
+    border: 3px solid;
+}
+div {
+    text-align: center;
+}
+div > p{
+    display: inline-block;
+
+    font-size: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    padding: 0px 20px 0px 0px;
+}
+footer {
+   background-color: black;
+   color: white;
+
+    margin: 50px 0px 0px 0px;
+
+   padding: 20px 0px ;
+
+   font-size: 1.7em;
+   font-weight: 700;    
+   font-style: normal;
+}
+button {
+    width: 100px;
+    height: 50px;
+
+    margin: 10px 0px 15px 0px;
+
+    padding: 2px 10px;
+
+    text-align: center;
+
+    background-color: darkred;
+
+    font-weight: 900;
+
+    border: 3px solid;
+}
+button:hover {
+    font-size: large;
+
+    border: 3px solid;
+}
+button:active {
+    background-color: darkgreen;
+
+    border: 3px solid;
+}
+#titulo {
+    font-size: 2.3em;
+
+    text-align: center;
+}
