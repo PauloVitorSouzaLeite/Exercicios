@@ -98,12 +98,15 @@ section > p {
 }
 div {
     margin: auto;
-    max-width: 800px;
+    max-width: 850px;
     min-width: 290px;
 
     background-color: var(--cor3);
-    padding: 7px 10px;
+    padding: 7px 30px;
+
+    margin: 0px auto 0px auto;
 }
 img {
+    display: block;
     width: 100%;
 }
