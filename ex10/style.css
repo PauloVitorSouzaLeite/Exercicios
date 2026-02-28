@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "casual memories";
+    src: url(./fontes/casual_memories/Casual\ Memories.ttf) format(truetype);
+}
+@font-face {
+    font-family: "cornella";
+    src: url(./fontes/cornella/cornella-Regular.otf) format(opentype);
+}
+@font-face {
+    font-family: "nordhin";
+    src: url(./fontes/nordhin/Nordhin.otf) format(opentype);
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chelsea+Market&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Red+Rose:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+:root {
+    --cor0: #0098DB;
+    --cor1: #2280A8;
+    --cor2: #2F6075;
+    --cor3: #283A42;
+    --fonte-titulo1: "casual memories", "serif";
+    --fonte-titulo2: "cornella", "serif";
+    --fonte-titulo3: "nordhin", "serif";
+}
+body {
+    margin: 0px;
+    background-color: grey;
+}
+#principal {
+    text-align: center;
+    background-color: var(--cor2);
+
+
+    padding: 10px 0px 20px 0px;
+
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.562)
+}
+#principal > h1 {
+    font-family: var(--fonte-titulo2);
+    font-weight: 300;
+    font-size: 3em;
+    color: honeydew;
+}
+nav > a {
+    background-color: var(--cor0);
+
+    text-decoration: none;
+
+    color: rgba(240, 248, 255, 0.863);
+
+    margin: 10px 10px 0px 10px;
+
+    padding: 5px 10px;
+    
+    transition-duration: 0.7ms;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+}
+main {
+    background-color: var(--cor0);
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 10px 7px;
+}
+section > h1 {
+    font-family: var(--fonte-titulo2);
+}
+section > h2 {
+    font-family: var(--fonte-titulo3);
+    font-weight: normal;
+    color: rgba(240, 248, 255, 0.842);
+}
+.link {
+    text-decoration: none;
+    font-weight: 800;
+}
+.link:hover {
+    background-color: var(--cor1);
+
+    transition-duration: 1s;
+
+    text-decoration: underline;
+}
+.link::before {
+    content: "*";
+}
+.link::after {
+    content: "*";
+}
+section > p {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    text-indent: 15px;
+}
+div {
+    margin: auto;
+    max-width: 800px;
+    min-width: 290px;
+
+    background-color: var(--cor3);
+    padding: 7px 10px;
+}
+img {
+    width: 100%;
+}
