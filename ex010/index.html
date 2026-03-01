@@ -5,31 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página pessoal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/favi.png" type="image/x-icon">
 </head>
 <body>
     <header id="principal">
         <h1>Paulo Vitor Souza Leite</h1>
         <nav>
-            <a href="">Home</a>
-            <a href="">Contato</a>
-            <a href="">Sobre</a>
+            <a href="#">Home</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
         </nav>
     </header>
     <main>
         <section>
             <article>
-                <h2>Quem sou eu?</h1>
+                <h1 class="colorir">Quem sou eu?</h1>
                 <p>Meu nome é Paulo Vitor Souza Leite, atualmente tenho 15 anos, desde criança eu gostava de tecnologia (coisas de computador, informática), aos 14 anos despertei um interesse em uma área de tecnologia, a programação.</p>
             </article>
-            <article class="distancia">
-                <h2>Como está sendo a minha jornada na programação?</h2>
+            <article id="segundo" class="distancia">
+                <h2 class="colorir">Como está sendo a minha jornada na programação?</h2>
                 <p>Primeiro, eu comecei a estudar os principios básicos que todo programador ja passou, a lógica de programação. Onde aprendemos a declarar váriaveis, loops, condições, etc.</p>
+                <div id="alinhar">
+                    <img class="linguagem"src="imagens/javascript.webp" alt="">
+                    <img class="linguagem"src="imagens/html.jpg" alt="">
+                    <img class="linguagem" src="imagens/css.webp" alt="">
+                </div>
             </article>
             <article class="distancia">
-                <h3>Python</h3>
-                <p>A primeira linguagem que eu comecei a estudar e praticar, foi a linguagem Python, eu tinha escolhido Pyhton porque ela é uma linguagem versátil e de fácil entendimento (o que estava ótimo para mim, no começo).</p>
+                <h2 class="colorir">Python</h2>
+                <p id="alinhado">A primeira linguagem que eu comecei a estudar e praticar, foi a linguagem Python, eu tinha escolhido Pyhton porque ela é uma linguagem versátil e de fácil entendimento (o que estava ótimo para mim, no começo). Estudei e pratiquei a linguagem Python por aproximadamente 2 meses. </p>
+            </article>
+            <article>
+                <h2 class="colorir">HTML e CSS3</h2>
+                <p>Depois de estudar Pyhton, eu decidi escolher uma área onde eu passaria a estudar, foi ai que eu escolhi a área de Front-End, onde abrange 2 linguagens de desenvolvimento e 1 de programação</p>
             </article>
         </section>
+         <footer>
+        <p>&copy;Todos os direitos reservados. 2026 Paulo Vitor Souza Leite. 
+        </p>
+    </footer>
     </main>
+    <script>
+        window.alert("Olá seja bem-vindo(a) a minha página pessoal, aqui você pode conhecer um pouco mais sobre mim e minha jornada na programação.")
+        var b = String(prompt("Qual é o título da página?")).toLowerCase()
+        b == "página pessoal" || b == "pagina pessoal" ? window.confirm("Você acertou!"): window.confirm("Você errou!")
+        var c = Number.parseInt(window.prompt("Qual é a sua idade atual?"))
+        c < 14 ? window.alert("Menos de 14 anos? você esta começando cedo, parabéns!") : c <= 17 ? window.alert("Entre 14 e 17 anos? você está no caminho certo!") : window.alert("Com mais de 17 anos? você já pode seguir carreira!")
+    </script>
 </body>
 </html>
