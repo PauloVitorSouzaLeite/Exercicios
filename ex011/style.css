@@ -1,0 +1,12 @@
+@charset "UTF-8";
+header {
+    text-align: center;
+    background-color: aquamarine;
+}
+#botao {
+    display: block;
+    
+    background-color: bisque;
+
+    margin: auto;
+}
