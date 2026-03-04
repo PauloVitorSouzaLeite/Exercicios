@@ -1,5 +1,3 @@
-# Projeto de exercícios
-## Exercício 05
-Projeto de estudo em HTML e CSS utilizando
-Box Model, tags semânticas e organização
-de layout.
+# Exercício 07
+Profile Card simples desenvolvido com HTML semântico e CSS,
+utilizando Box Model, pseudo-classes e layout responsivo.

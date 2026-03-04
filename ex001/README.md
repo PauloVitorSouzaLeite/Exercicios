@@ -1,4 +1,4 @@
-## Loja Simples - ex2
+## Loja Simples 
 
 Projeto desenvolvido para praticar HTML e CSS
 
