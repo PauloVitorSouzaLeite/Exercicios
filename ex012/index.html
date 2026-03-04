@@ -8,37 +8,33 @@
 </head>
 <body>
     <header>
-        <h1>Práticas com eventos DOM</h1>
-        <p>Selecione um botão para trocar a cor de texto do parágrafo</p>
+        <h1>Positivo e Negativo</h1>
     </header>
     <main>
-        <article>
-            <p id="paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo omnis provident odit. Velit possimus neque, a excepturi culpa vitae suscipit, placeat voluptatibus numquam minus libero non dolorum natus obcaecati in. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid aperiam possimus facilis, facere iste minus dolorem adipisci doloremque, eligendi assumenda hic beatae totam amet harum doloribus officia. Dolorem, excepturi corrupti!
-            </p>
-        </article>
+        <div id="numeros">
+            <input type="number" name="nums" id="nums">
+        </div>
         <div>
-            <input type="button" value="Red" id="vermelho">
-            <input type="button" value="Green" id="verde">
-            <input type="button" value="Blue" id="azul">
+            <input id="a1" class="botao" type="button" value="Aumentar">
+            <input  id="d1" class="botao" type="button" value="Diminuir">
         </div>
     </main>
     <script>
-        var red = document.getElementById("vermelho")
-        red.addEventListener("click", mudar_red)
-        var green = document.getElementById("verde")
-        green.addEventListener("click", mudar_green)
-        var blue = document.getElementById("azul")
-        blue.addEventListener("click", mudar_blue)
-        var mudar = document.getElementById("paragrafo")
-
-        function mudar_red() {
-            mudar.style.color = "red"
+        var tela = document.getElementById("nums")
+        console.log(tela.value = 0)
+        var aumentar = document.getElementById("a1")
+        aumentar.addEventListener("click", aumenta)
+        var diminuir = document.getElementById("d1")
+        diminuir.addEventListener("click", diminui)
+        function aumenta() {
+            var a = Number(tela.value)
+            console.log(tela.value += 1)
+            a > 0 ? tela.style.backgroundColor = "green" : tela.style.backgroundColor = "white"
         }
-        function mudar_green() {
-            mudar.style.color = "green"
-        }
-        function mudar_blue() {
-            mudar.style.color = "blue"
+        function diminui() {
+            var a = Number(tela.value)
+            console.log(tela.value -= 1)
+            a < 0 ? tela.style.backgroundColor = "red" : tela.style.backgroundColor = "white"
         }
     </script>
 </body>
