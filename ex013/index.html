@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Positivo e Negativo</h1>
+    </header>
+    <main>
+        <div id="numeros">
+            <input type="number" name="nums" id="nums">
+        </div>
+        <div>
+            <input id="a1" class="botao" type="button" value="Aumentar">
+            <input  id="d1" class="botao" type="button" value="Diminuir">
+        </div>
+    </main>
+    <script>
+        var tela = document.getElementById("nums")
+        console.log(tela.value = 0)
+        var aumentar = document.getElementById("a1")
+        aumentar.addEventListener("click", aumenta)
+        var diminuir = document.getElementById("d1")
+        diminuir.addEventListener("click", diminui)
+        function aumenta() {
+            var a = Number(tela.value)
+            console.log(tela.value += 1)
+            a > 0 ? tela.style.backgroundColor = "green" : tela.style.backgroundColor = "white"
+        }
+        function diminui() {
+            var a = Number(tela.value)
+            console.log(tela.value -= 1)
+            a < 0 ? tela.style.backgroundColor = "red" : tela.style.backgroundColor = "white"
+        }
+    </script>
+</body>
+</html>
