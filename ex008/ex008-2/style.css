@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Orbitron:wght@400..900&family=Syne+Mono&display=swap');
+:root {
+    --cor1 : #65CBE6;
+    --cor2 : #708991;
+    --cor3 : #29383C;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: linear-gradient(to bottom, transparent, dimgrey, black);
+}
+header {
+    padding: 0px 0px 10px 0px;
+    background-color: black;
+    background-image: url(imgs/pexels-cottonbro-4778611.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+header > h1 {
+    text-align: center;
+    font: normal 600 3em "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--cor2);
+    margin: 0px 0px 50px;
+    padding: 46px 10px 5px 10px;
+    border-radius: 0px 15px 15px 0px;
+    text-shadow: 2px 2px 3px black;
+}
+main {
+    max-width: 1500px;
+    padding: 15px 20px;
+    background-color: white;
+    margin: auto;
+    font-size: 1.2em;
+}
+.normal {
+    margin: 20px 0px 50px 0px;
+    padding: 6px 12px;
+    box-shadow: -3px 5px 3px 2px rgba(0, 0, 0, 0.466);
+}
+article > h2 {
+    color: var(--cor3);
+    padding: 2px 0px 10px 0px;
+    font-family: "Syne Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7em;
+}
+article > p {
+    font-size: 1.125em;
+    padding: 0px 0px 7px 0px;
+    text-indent: 15px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor2);
+}
+table {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+}
+caption {
+    font-size: 1.3em;
+}
+thead , tfoot, caption {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+tbody {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+th,td {
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+#tab {
+    overflow-x: auto;
+}
+#verde {
+    background-color: lightgreen;
+}
+#foto1 {
+    background-image: url(imgs/pexels-pixabay-289737.jpg);
+}
+#foto2 {
+    background-image: url(imgs/pexels-valentin-ivantsov-2154772556-36650154.jpg);
+}
+img {
+    display: block;
+}
+footer {
+    padding: 15px 0px;
+    background-color: black;
+}
+footer > p {
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+}
+nav {
+    padding: 0px 0px 5px 25px;
+}
+nav > a {
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.473);
+    font-size: 1.2em;
+    color: rgb(255, 140, 0);
+    text-decoration: none;
+    padding: 3px 5px;
+    font-weight: 600;
+}
+nav > a:hover {
+    transition: 1s;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: underline;
+
+}
+.foto {
+    margin: 60px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.foto > article > p {
+    background-color: var(--cor3);
+    color: white;
+    width: 300px;
+    padding: 10px 20px 50px 15px;
+}
